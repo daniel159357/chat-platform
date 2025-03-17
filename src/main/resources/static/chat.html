@@ -28,7 +28,8 @@
         const chatBox = document.getElementById("chat-box");
 
         function connect() {
-            ws = new WebSocket("ws://localhost:8080/chat");
+            const wsUrl = `wss://${window.location.host}/chat`;
+            ws = new WebSocket(wsUrl);
             ws.onopen = () => appendMessage("Connected to chat!");
             ws.onmessage = (event) => appendMessage(event.data);
             ws.onclose = () => appendMessage("Disconnected from chat!");
@@ -51,7 +52,8 @@
         }
 
         function loadChatHistory() {
-            fetch("http://localhost:8080/api/messages")
+            const apiUrl = `https://${window.location.host}/api/messages`;
+            fetch(apiUrl)
                 .then(response => response.json())
                 .then(messages => {
                     messages.forEach(msg => appendMessage(`${msg.sender}: ${msg.content} (${msg.timestamp})`));
