@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Platform</title>
+    <style>
+        #chat-box {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Chat Platform</h2>
+    <label for="username">Username: </label>
+    <input type="text" id="username" placeholder="Enter your username"><br><br>
+    <div id="chat-box"></div>
+    <input type="text" id="message" placeholder="Type a message">
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="loadChatHistory()">Load Chat History</button>
+
+    <script>
+        let ws;
+        const chatBox = document.getElementById("chat-box");
+
+        function connect() {
+            ws = new WebSocket("ws://localhost:8080/chat");
+            ws.onopen = () => appendMessage("Connected to chat!");
+            ws.onmessage = (event) => appendMessage(event.data);
+            ws.onclose = () => appendMessage("Disconnected from chat!");
+        }
+
+        function sendMessage() {
+            const username = document.getElementById("username").value || "Anonymous";
+            const message = document.getElementById("message").value;
+            if (message && ws) {
+                ws.send(username + ":" + message);
+                document.getElementById("message").value = "";
+            }
+        }
+
+        function appendMessage(message) {
+            const p = document.createElement("p");
+            p.textContent = message;
+            chatBox.appendChild(p);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function loadChatHistory() {
+            fetch("http://localhost:8080/api/messages")
+                .then(response => response.json())
+                .then(messages => {
+                    messages.forEach(msg => appendMessage(`${msg.sender}: ${msg.content} (${msg.timestamp})`));
+                });
+        }
+
+        // Connect on page load
+        connect();
+    </script>
+</body>
+</html>
