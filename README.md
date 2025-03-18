@@ -106,7 +106,6 @@ This project was developed as part of a learning exercise and serves as a showca
 - Implement private chat rooms or group messaging.
 
 ## Credits
-- Developed with guidance from Grok 3, an AI assistant by xAI.
 - Built using Spring Boot 3.3.4, Java 17, and Maven.
 - Inspired by online tutorials and Spring documentation.
 
