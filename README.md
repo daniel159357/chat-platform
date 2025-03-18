@@ -23,7 +23,7 @@ This project was developed as part of a learning exercise and serves as a showca
 1. **Fork or Clone the Repository**:
    - Fork this repository to your GitHub account or clone it:
      ```bash
-     git clone https://github.com/Username/chat-platform.git
+     git clone https://github.com/daniel159357/chat-platform.git
      ```
      Replace Username with your GitHub username.
 2. **Launch Codespaces**:
@@ -110,30 +110,13 @@ This project was developed as part of a learning exercise and serves as a showca
 - Inspired by online tutorials and Spring documentation.
 
 ## License
-This project is open-source and available under the MIT License (add a LICENSE file if desired).
+This project is open-source and available under the MIT License.
 
----
+Copyright (c) 2025 Daniel TAM
 
-### How to Add to Your GitHub Repository
-1. **Create the File**:
-   - In your GitHub repository (`Username/chat-platform`), go to the root directory.
-   - Click “Add file” > “Create new file.”
-   - Name it `README.md` and paste the content above.
-   - Commit the file to the `main` branch.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-2. **Update in Codespaces**:
-   - If you’re using Codespaces, create `README.md` in the file explorer (right-click > “New File”).
-   - Paste the content, save it, and commit the changes.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-3. **View on GitHub**:
-   - Refresh your repository page (`https://github.com/Username/chat-platform`), and the README will appear as the project description.
-
----
-
-### Customization Tips
-- **Personalize**: Replace `Username` with your actual GitHub username in the instructions.
-- **Add Screenshots**: Include images of the chat interface (e.g., upload to GitHub and link them in the README using `![Chat Interface](path-to-image)`).
-- **License**: If you want to add a license, create a `LICENSE` file with MIT or another license text and link it.
-- **Contributors**: If others helped, add their names under “Credits.”
-
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
