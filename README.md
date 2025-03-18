@@ -137,8 +137,3 @@ This project is open-source and available under the MIT License (add a LICENSE f
 - **Contributors**: If others helped, add their names under “Credits.”
 
 ---
-
-### Testing the README
-After adding the README, follow the setup instructions yourself in Codespaces or locally to ensure they’re clear. If you run into any issues while testing (e.g., unclear steps), let me know, and I’ll refine the instructions.
-
-Your chat platform is now not only functional but also well-documented—perfect for showcasing your skills!
