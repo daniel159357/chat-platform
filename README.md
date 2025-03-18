@@ -2,7 +2,7 @@
 
 Welcome to the **Chat Platform**, a real-time online chat application built using Spring Boot. This project demonstrates the use of WebSocket for real-time messaging, REST APIs for user management and chat history, and an in-memory H2 database for persistence. It’s designed as a simple, scalable chat system that can be extended with additional features like user authentication or a modern frontend framework (e.g., React or Vue).
 
-This project was developed as part of a learning exercise and serves as a showcase for Spring Boot development skills, making it an excellent addition to a CV or portfolio.
+This project was developed as part of a learning exercise and serves as a showcase for Spring Boot development skills.
 
 ## Features
 - **Real-Time Messaging**: Uses WebSocket for instant message broadcasting to all connected users.
